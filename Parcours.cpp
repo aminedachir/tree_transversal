@@ -28,9 +28,9 @@ bool rechercheElement(Node* arbre, int v) {
     if (arbre->value == v)
          return true;
     if (v < arbre->value)
-          rechercheElement(arbre->left, v);
+          return rechercheElement(arbre->left, v);
      else
-         rechercheElement(arbre->right, v);
+         return rechercheElement(arbre->right, v);
 }
 
 
